@@ -1,350 +1,344 @@
 <html><head>
-<title>SealGaming - Servidores de Gaming</title>
-<link rel="icon" href="http://imgfz.com/i/YIS5yhG.png" type="image/x-icon">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-<style>
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Rajdhani', sans-serif;
-    background: #121212;
-    color: #ffffff;
-}
-
-.banner {
-    width: 100%;
-    height: 300px;
-    background-image: url('http://imgfz.com/i/TSoJhZQ.png');
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 2rem;
-}
-
-.description {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 3rem;
-    padding: 0 1rem;
-}
-
-.nav-menu {
-    background: rgba(0,0,0,0.5);
-    padding: 1rem;
-    margin-bottom: 2rem;
-}
-
-.nav-menu ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin: 0;
-}
-
-.nav-menu a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s;
-}
-
-.nav-menu a:hover {
-    color: #00ff99;
-}
-
-.premium-section {
-    background: linear-gradient(rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.05));
-    padding: 4rem 2rem;
-    margin: 2rem 0;
-    border-top: 1px solid rgba(255, 215, 0, 0.3);
-    border-bottom: 1px solid rgba(255, 215, 0, 0.3);
-}
-
-.premium-title {
-    color: #FFD700;
-    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
-}
-
-.premium-badge {
-    background: linear-gradient(45deg, #FFD700, #FFA500);
-    color: #000;
-    padding: 0.3rem 1rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: bold;
-    display: inline-block;
-    margin-left: 1rem;
-    vertical-align: middle;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
-}
-
-.game-tag {
-    background: rgba(0,0,0,0.3);
-    color: #fff;
-    padding: 0.2rem 0.8rem;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
-    display: inline-block;
-}
-
-.premium-card {
-    background: rgba(0,0,0,0.7);
-    border: 1px solid rgba(255, 215, 0, 0.3);
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
-}
-
-.premium-card:hover {
-    border-color: rgba(255, 215, 0, 0.5);
-    box-shadow: 0 0 30px rgba(255, 215, 0, 0.2);
-}
-
-.servers-section {
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.section-title {
-    text-align: center;
-    color: #00ff99;
-    margin-bottom: 2rem;
-}
-
-.servers-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.server-card {
-    background: rgba(255,255,255,0.05);
-    border-radius: 10px;
-    padding: 1.5rem;
-    transition: transform 0.3s, box-shadow 0.3s;
-    position: relative;
-}
-
-.server-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,255,153,0.2);
-}
-
-.server-status {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    padding: 0.3rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-}
-
-.status-active {
-    background: #00ff99;
-    color: #000;
-}
-
-.server-ip {
-    background: rgba(0,0,0,0.3);
-    padding: 0.5rem;
-    border-radius: 5px;
-    margin: 1rem 0;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.server-ip:hover {
-    background: rgba(0,255,153,0.1);
-}
-
-.social-section {
-    background: rgba(255,255,255,0.05);
-    padding: 3rem 2rem;
-    text-align: center;
-    margin-top: 3rem;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-bottom: 2rem;
-}
-
-.social-links a {
-    color: #fff;
-    font-size: 2rem;
-    transition: color 0.3s;
-}
-
-.social-links a:hover {
-    color: #00ff99;
-}
-
-.whatsapp-button {
-    display: inline-block;
-    background: #25D366;
-    color: white;
-    padding: 1rem 2rem;
-    border-radius: 30px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s;
-}
-
-.whatsapp-button:hover {
-    background: #128C7E;
-}
-
-.copyright {
-    text-align: center;
-    padding: 1rem;
-    background: rgba(0,0,0,0.5);
-    margin-top: 2rem;
-}
-</style>
-</head>
-<body>
-
-<div class="banner"></div>
-
-<div class="description">
-    <h2>Bienvenido a SealGaming</h2>
-    <p>Nuestra Comunidad de Gaming trae mediante esta web los mejores servidores de los diferentes juegos como es Counter-Strike 1.6, SAMP, Minecraft y proximamente más Juegos. Sube su servidor tanto de Manera Gratuita como en la PremiumZone para tener más ventajas, adquierelo al final de toda la web o tocando en la opcion del menú. Cabe Aclarar que acá subimos y publicitamos servidores más no somos los dueños de la mayoria de servidores. Únete a nosotros y sé parte de esta increíble comunidad gaming.</p>
-</div>
-
-<nav class="nav-menu">
-    <ul>
-        <li><a href="#premium">Servidores Premium</a></li>
-        <li><a href="#cs16">Counter-Strike 1.6</a></li>
-        <li><a href="#samp">SA-MP</a></li>
-        <li><a href="#minecraft">Minecraft</a></li>
-        <li><a href="#contact">Contacta y Adquiere tu Slot</a></li>
-    </ul>
-</nav>
-
-<section class="servers-section premium-section" id="premium">
-    <h2 class="section-title premium-title">PremiumZone<span class="premium-badge">PREMIUM</span></h2>
-    <div class="servers-grid">
-        <div class="server-card premium-card">
-            <span class="server-status status-active">Activo</span>
-            <h3>#1 Zombie Scape | Drunk Gaming</h3>
-            <span class="game-tag">Counter-Strike 1.6</span>
-            <div class="server-ip" onclick="copyIP(this)">cs.drunkgaming.net:27050</div>
-            <p>Buen Registro | Anticheat | Estadísticas</p>
-        </div>
-        <div class="server-card premium-card">
-            <span class="server-status status-active">Activo</span>
-            <h3>#11 Publico Clasico | Drunk Gaming</h3>
-            <span class="game-tag">Counter-Strike 1.6</span>
-            <div class="server-ip" onclick="copyIP(this)">cs.drunkgaming.net:27060</div>
-            <p>Buen Registro | Buen Anticheat | Admins Activos</p>
-        </div>
-        <div class="server-card premium-card">
-            <span class="server-status status-active">Activo</span>
-            <h3>#17 Deathmatch + FFA | Drunk Gaming</h3>
-            <span class="game-tag">Counter-Strike 1.6</span>
-            <div class="server-ip" onclick="copyIP(this)">cs.drunkgaming.net:27066</div>
-            <p>Buen Registro | Buen Anticheat</p>
-        </div>
+    <title>SealGaming - Servidores de Gaming</title>
+    <link rel="icon" href="http://imgfz.com/i/YIS5yhG.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Rajdhani', sans-serif;
+        background: #121212;
+        color: #ffffff;
+    }
+    
+    .banner {
+        width: 100%;
+        height: 300px;
+        background-image: url('http://imgfz.com/i/TSoJhZQ.png');
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 2rem;
+    }
+    
+    .description {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 3rem;
+        padding: 0 1rem;
+    }
+    
+    .nav-menu {
+        background: rgba(0,0,0,0.5);
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .nav-menu ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin: 0;
+    }
+    
+    .nav-menu a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s;
+    }
+    
+    .nav-menu a:hover {
+        color: #00ff99;
+    }
+    
+    .premium-section {
+        background: linear-gradient(rgba(255, 215, 0, 0.1), rgba(255, 215, 0, 0.05));
+        padding: 4rem 2rem;
+        margin: 2rem 0;
+        border-top: 1px solid rgba(255, 215, 0, 0.3);
+        border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+    }
+    
+    .premium-title {
+        color: #FFD700;
+        text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    }
+    
+    .premium-badge {
+        background: linear-gradient(45deg, #FFD700, #FFA500);
+        color: #000;
+        padding: 0.3rem 1rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        display: inline-block;
+        margin-left: 1rem;
+        vertical-align: middle;
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    }
+    
+    .game-tag {
+        background: rgba(0,0,0,0.3);
+        color: #fff;
+        padding: 0.2rem 0.8rem;
+        border-radius: 15px;
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+        display: inline-block;
+    }
+    
+    .premium-card {
+        background: rgba(0,0,0,0.7);
+        border: 1px solid rgba(255, 215, 0, 0.3);
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+    }
+    
+    .premium-card:hover {
+        border-color: rgba(255, 215, 0, 0.5);
+        box-shadow: 0 0 30px rgba(255, 215, 0, 0.2);
+    }
+    
+    .servers-section {
+        padding: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .section-title {
+        text-align: center;
+        color: #00ff99;
+        margin-bottom: 2rem;
+    }
+    
+    .servers-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+    
+    .server-card {
+        background: rgba(255,255,255,0.05);
+        border-radius: 10px;
+        padding: 1.5rem;
+        transition: transform 0.3s, box-shadow 0.3s;
+        position: relative;
+    }
+    
+    .server-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,255,153,0.2);
+    }
+    
+    .server-status {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        padding: 0.3rem 0.8rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+    }
+    
+    .status-active {
+        background: #00ff99;
+        color: #000;
+    }
+    
+    .server-ip {
+        background: rgba(0,0,0,0.3);
+        padding: 0.5rem;
+        border-radius: 5px;
+        margin: 1rem 0;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    
+    .server-ip:hover {
+        background: rgba(0,255,153,0.1);
+    }
+    
+    .social-section {
+        background: rgba(255,255,255,0.05);
+        padding: 3rem 2rem;
+        text-align: center;
+        margin-top: 3rem;
+    }
+    
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .social-links a {
+        color: #fff;
+        font-size: 2rem;
+        transition: color 0.3s;
+    }
+    
+    .social-links a:hover {
+        color: #00ff99;
+    }
+    
+    .whatsapp-button {
+        display: inline-block;
+        background: #25D366;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background 0.3s;
+    }
+    
+    .whatsapp-button:hover {
+        background: #128C7E;
+    }
+    
+    .copyright {
+        text-align: center;
+        padding: 1rem;
+        background: rgba(0,0,0,0.5);
+        margin-top: 2rem;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div class="banner"></div>
+    
+    <div class="description">
+        <h2>Bienvenido a SealGaming</h2>
+        <p>Nuestra Comunidad de Gaming trae mediante esta web los mejores servidores de los diferentes juegos como es Counter-Strike 1.6, SAMP, Minecraft y proximamente más Juegos. Sube su servidor tanto de Manera Gratuita como en la PremiumZone para tener más ventajas, adquierelo al final de toda la web o tocando en la opcion del menú. Cabe Aclarar que acá subimos y publicitamos servidores más no somos los dueños de la mayoria de servidores. Únete a nosotros y sé parte de esta increíble comunidad gaming.</p>
     </div>
-</section>
-
-<section class="servers-section" id="cs16">
-    <h2 class="section-title">Servidores de Counter Strike</h2>
-    <div class="servers-grid">
-        <div class="server-card">
-            <span class="server-status status-active">Activo</span>
-            <h3>Clan MYTHSKILL #4Fun</h3>
-            <div class="server-ip" onclick="copyIP(this)">131.196.198.52:27248</div>
+    
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="#premium">Servidores Premium</a></li>
+            <li><a href="#cs16">Counter-Strike 1.6</a></li>
+            <li><a href="#samp">SA-MP</a></li>
+            <li><a href="#minecraft">Minecraft</a></li>
+            <li><a href="#contact">Contacta y Adquiere tu Slot</a></li>
+        </ul>
+    </nav>
+    
+    <section class="servers-section premium-section" id="premium">
+        <h2 class="section-title premium-title">PremiumZone<span class="premium-badge">PREMIUM</span></h2>
+        <div class="servers-grid">
+            <div class="server-card premium-card">
+                <span class="server-status status-active">Activo</span>
+                <h3>#1 Publico Clasico | SealGaming by Alexiusss</h3>
+                <span class="game-tag">Counter-Strike 1.6</span>
+                <div class="server-ip" onclick="copyIP(this)">78.46.39.20:10345</div>
+                <p>Buen Registro | Anticheat | Estadísticas</p>
+            </div>
+            <div class="server-card premium-card">
+                <span class="server-status status-active">Activo</span>
+                <h3>Adquiere tu Slot Premium Al Final de la Web</h3>
+                <span class="game-tag">Cualquier Juego</span>
+                <div class="server-ip" onclick="copyIP(this)">000.000.00.00:00000</div>
+                <p>Buen Registro | Buen Anticheat | Buen Posicionamiento</p>
+            </div>
         </div>
-        <div class="server-card">
-            <span class="server-status status-active">Activo</span>
-            <h3>P[c]T eGames | 4Fun [1]</h3>
-            <div class="server-ip" onclick="copyIP(this)">177.54.151.114:27045</div>
+    </section>
+    
+    <section class="servers-section" id="cs16">
+        <h2 class="section-title">Servidores de Counter Strike</h2>
+        <div class="servers-grid">
+            <div class="server-card">
+                <span class="server-status status-active">Activo</span>
+                <h3>Clan MYTHSKILL #4Fun</h3>
+                <div class="server-ip" onclick="copyIP(this)">131.196.198.52:27248</div>
+            </div>
+            <div class="server-card">
+                <span class="server-status status-active">Activo</span>
+                <h3>P[c]T eGames | 4Fun [1]</h3>
+                <div class="server-ip" onclick="copyIP(this)">177.54.151.114:27045</div>
+            </div>
+            <div class="server-card">
+                <span class="server-status status-active">Activo</span>
+                <h3>[CS.BR] - TeaM | [4FUN]</h3>
+                <div class="server-ip" onclick="copyIP(this)">131.196.198.52:27055</div>
+            </div>
+            <div class="server-card">
+                <span class="server-status status-active">Activo</span>
+                <h3>Adquiere tu Slot Al Final de la Web</h3>
+                <div class="server-ip" onclick="copyIP(this)">000.000.00.00:00000</div>
+            </div>
         </div>
-        <div class="server-card">
-            <span class="server-status status-active">Activo</span>
-            <h3>[CS.BR] - TeaM | [4FUN]</h3>
-            <div class="server-ip" onclick="copyIP(this)">131.196.198.52:27055</div>
+    </section>
+    
+    <section class="servers-section" id="samp">
+        <h2 class="section-title">Servidores SA-MP</h2>
+        <div class="servers-grid">
+            <div class="server-card">
+                <span class="server-status status-active">Activo</span>
+                <h3>Superdanova Roleplay RP1</h3>
+                <div class="server-ip" onclick="copyIP(this)">rp.superdanova.com:7777</div>
+            </div>
+            <div class="server-card">
+                <span class="server-status status-active">Activo</span>
+                <h3>Superdanova Roleplay RP2</h3>
+                <div class="server-ip" onclick="copyIP(this)">rp2.superdanova.com:7777</div>
+            </div>
         </div>
-        <div class="server-card">
-            <span class="server-status status-active">Activo</span>
-            <h3>Adquiere tu Slot Al Final de la Web</h3>
-            <div class="server-ip" onclick="copyIP(this)">000.000.00.00:00000</div>
+    </section>
+    
+    <section class="servers-section" id="minecraft">
+        <h2 class="section-title">Servidores Minecraft</h2>
+        <div class="servers-grid">
+            <div class="server-card">
+                <span class="server-status status-active">Activo</span>
+                <h3>Universocraft</h3>
+                <div class="server-ip" onclick="copyIP(this)">mc.universocraft.com</div>
+            </div>
+            <div class="server-card">
+                <span class="server-status status-active">Activo</span>
+                <h3>Librecraft</h3>
+                <div class="server-ip" onclick="copyIP(this)">mc.librecraft.com</div>
+            </div>
         </div>
+    </section>
+    
+    <section class="social-section" id="contact">
+        <div class="social-links">
+            <a href="https://www.youtube.com/@Alexiusss_VC" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@aalexz_0" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://discord.com/invite/hJrFBf74KG" target="_blank"><i class="fab fa-discord"></i></a>
+        </div>
+        <p>¿Quieres subir tu servidor?</p>
+        <a href="https://sites.google.com/view/seal-gaming/seal-gaming-compra-tu-slot-aqu%C3%AD" class="whatsapp-button" target="_blank" style="background: #FF6B6B;">
+        <i class="fas fa-shopping-cart"></i> Comprar Slot
+        </a>
+    </section>
+    
+    <div class="copyright">
+        © 2024 SealGaming - Alexiusss VC - Zynthro Studio. Todos los derechos reservados.
     </div>
-</section>
-
-<section class="servers-section" id="samp">
-    <h2 class="section-title">Servidores SA-MP</h2>
-    <div class="servers-grid">
-        <div class="server-card">
-            <span class="server-status status-active">Activo</span>
-            <h3>Superdanova Roleplay RP1</h3>
-            <div class="server-ip" onclick="copyIP(this)">rp.superdanova.com:7777</div>
-        </div>
-        <div class="server-card">
-            <span class="server-status status-active">Activo</span>
-            <h3>Superdanova Roleplay RP2</h3>
-            <div class="server-ip" onclick="copyIP(this)">rp2.superdanova.com:7777</div>
-        </div>
-    </div>
-</section>
-
-<section class="servers-section" id="minecraft">
-    <h2 class="section-title">Servidores Minecraft</h2>
-    <div class="servers-grid">
-        <div class="server-card">
-            <span class="server-status status-active">Activo</span>
-            <h3>Universocraft</h3>
-            <div class="server-ip" onclick="copyIP(this)">mc.universocraft.com</div>
-        </div>
-        <div class="server-card">
-            <span class="server-status status-active">Activo</span>
-            <h3>Librecraft</h3>
-            <div class="server-ip" onclick="copyIP(this)">mc.librecraft.com</div>
-        </div>
-    </div>
-</section>
-
-<section class="social-section" id="contact">
-    <div class="social-links">
-        <a href="https://www.youtube.com/@Alexiusss_VC" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a href="https://www.tiktok.com/@aalexz_0" target="_blank"><i class="fab fa-tiktok"></i></a>
-        <a href="https://discord.com/invite/hJrFBf74KG" target="_blank"><i class="fab fa-discord"></i></a>
-    </div>
-    <p>¿Quieres subir tu servidor?</p>
-    <a href="https://sites.google.com/view/seal-gaming/seal-gaming-compra-tu-slot-aqu%C3%AD" class="whatsapp-button" target="_blank" style="background: #FF6B6B;">
-    <i class="fas fa-shopping-cart"></i> Comprar Slot
-    </a>
-</section>
-
-<div class="copyright">
-    © 2024 SealGaming - Alexiusss VC - Zynthro Studio. Todos los derechos reservados.
-</div>
-
-<script>
-function copyIP(element) {
-    const ip = element.textContent;
-    navigator.clipboard.writeText(ip).then(() => {
-        // Guardamos el texto original
-        const originalText = element.textContent;
-        // Cambiamos el texto temporalmente
-        element.textContent = '¡IP Copiada!';
-        // Después de 2 segundos, restauramos el texto original
-        setTimeout(() => {
-            element.textContent = originalText;
-        }, 2000);
-    }).catch(err => {
-        console.error('Error al copiar: ', err);
-    });
-}
-</script>
-
-</body>
-</html>
+    
+    <script>
+    function copyIP(element) {
+        const ip = element.textContent;
+        navigator.clipboard.writeText(ip).then(() => {
+            // Guardamos el texto original
+            const originalText = element.textContent;
+            // Cambiamos el texto temporalmente
+            element.textContent = '¡IP Copiada!';
+            // Después de 2 segundos, restauramos el texto original
+            setTimeout(() => {
+                element.textContent = originalText;
+            }, 2000);
+        }).catch(err => {
+            console.error('Error al copiar: ', err);
+        });
+    }
+    </script>
+    
+    </body>
+    </html>
+    
